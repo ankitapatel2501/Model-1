@@ -1,8 +1,16 @@
 <html>
 <head>
-<h1>Registration Form</h1>
+<title>Registration Form</title>
+
+
 </head>
-<body>
+<body style="background-color:lightblue;">
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+</nav>
+<h1>Registration Form</h1>
 <form>
 <label>FirstName:</label>
 <input type="text" name="FirstName" required><br><br>
@@ -14,6 +22,8 @@
 <input type="text" name="Address" required><br><br>
 <label>PhoneNo:</label>
 <input type="[0-9]{10}" name="PhoneNo" required><br><br>
+<label>TeleNo:</label>
+<input type="tel" name="TeleNo" required><br><br>
 <label>DateOfBirth:</label>
 <input type="date" name="DateOfBirth" required><br><br>
 <label>Gender:</label>
@@ -21,12 +31,27 @@
 <input type="radio" name="Gender" value="Female" required>Female
 <input type="radio" name="Gender" value="Other" required>Other
 <br><br>
+<label>Age:</label>
+<input type="checkbox" name="Age" value="18+" required>18+
+<input type="checkbox" name="Age" value="0-17" required>0-17
+<br><br>
+<label>Marks:</label>
+<input type="range" name="Marks" min="0" max="100"><br><br>
 <label>Password:</label>
 <input type="password" name="Password" required><br><br>
+<label>UploadImage:</label>
+<input type="image" name="Image" required><br><br>
+<label>SelectFile:</label>
+<input type="file" name="File" required><br><br>
+<label>Link:</label>
+<input type="url" name="Link" required><br><br>
 <label>Color:</label>
 <input type="color" name="Color" required><br><br>
-<input type="Submit" value="Submit">
-
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+<footer>
+<p>© registration system </p>
+</footer>
 </form>
 </body>
 </html>
