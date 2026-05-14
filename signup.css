@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(to right,#0f172a,#1e293b);
+}
+
+.container{
+    width:950px;
+    height:600px;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    display:flex;
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+.left{
+    width:50%;
+    background:#0f172a;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+}
+
+.left h1{
+    font-size:45px;
+    margin-bottom:20px;
+}
+
+.left p{
+    font-size:18px;
+    text-align:center;
+    line-height:1.7;
+    margin-bottom:30px;
+}
+
+.left img{
+    width:220px;
+}
+
+.right{
+    width:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f8fafc;
+}
+
+.signup-box{
+    width:80%;
+}
+
+.signup-box h2{
+    font-size:35px;
+    color:#0f172a;
+    margin-bottom:30px;
+}
+
+.input-box{
+    margin-bottom:18px;
+}
+
+.input-box input{
+    width:100%;
+    padding:14px;
+    border:2px solid #cbd5e1;
+    border-radius:10px;
+    font-size:16px;
+    outline:none;
+    transition:0.3s;
+}
+
+.input-box input:focus{
+    border-color:#2563eb;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    border:none;
+    background:#2563eb;
+    color:white;
+    font-size:18px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+.social{
+    margin-top:25px;
+    text-align:center;
+}
+
+.social p{
+    margin-bottom:15px;
+    color:gray;
+}
+
+.icons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+}
+
+.icons img{
+    width:45px;
+    height:45px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.icons img:hover{
+    transform:scale(1.1);
+}
+
+.login-link{
+    margin-top:20px;
+    text-align:center;
+}
+
+.login-link a{
+    color:#2563eb;
+    text-decoration:none;
+}
+
+@media(max-width:768px){
+
+.container{
+    flex-direction:column;
+    width:95%;
+    height:auto;
+}
+
+.left,
+.right{
+    width:100%;
+    padding:40px 20px;
+}
+
+.left img{
+    width:150px;
+}
+
+}
